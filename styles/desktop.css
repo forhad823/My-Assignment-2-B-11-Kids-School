@@ -1,5 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.quicksand-regular {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/*.......... shared styles........... */
+#header-container,
+#main-container {
+  width: 100%;
+}
+#header-container .header,
+#main-container .main {
+  max-width: 81vw;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.primary-btn {
+  border-radius: 0.75rem;
+  color: white;
+  padding: 0.6rem 3rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-style: none;
+}
+/*.........navbar related styles................. */
+#menu-icon {
+  display: none;
+}
+
+.school-logo > img {
+  width: 3.8rem;
+  height: 3.8rem;
+  object-fit: contain;
+}
+
+.header,
+.logo-container,
+.navbar,
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#site-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links li {
+  list-style: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.nav-links {
+  gap: 2rem;
+}
+.contact-btn {
+  background-color: orange;
+}
+
+/*....... main div related styles.......... */
+#main-container {
+  height: auto;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/*............. banner section styles............ */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.13rem;
+}
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1.5rem;
+}
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.banner-description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: auto;
+}
+.banner-btn {
+  background-color: black;
+  width: 12.7rem;
 }

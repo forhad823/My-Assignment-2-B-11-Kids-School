@@ -4,22 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A11 Kids School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/desktop.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/87cc45199e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <header>
-      <nav class="navbar"></nav>
-      <marquee
-        behavior="scroll"
-        direction="left"
-        width="80%"
-        height="100px"
-        scrollamount="20"
-        >Welcome to Kids School</marquee
-      >
+  <body class="quicksand-regular">
+    <header id="header-container">
+      <div class="header">
+        <div class="logo-container">
+          <div class="school-logo">
+            <img src="assets/logo.png" alt="logo" />
+          </div>
+          <div id="site-name">SCHOOL</div>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li style="color: orange">Home</li>
+            <li style="color: skyblue">About</li>
+            <li style="color: #05d4df">Facilities</li>
+            <li style="color: #5d58ef">Admission</li>
+          </ul>
+        </nav>
+        <button class="primary-btn contact-btn">Contact</button>
+        <div id="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
     </header>
-    <main></main>
+    <main id="main-container">
+      <div class="main">
+        <marquee
+          behavior="scroll"
+          direction="left"
+          width="100%"
+          height="25px"
+          scrollamount="25"
+          style="color: #05d4df; font-size: 1.25rem; font-weight: bold"
+          >Welcome to Kids School</marquee
+        >
+        <section class="banner">
+          <div class="banner-text">
+            <h1 class="banner-title">
+              <span style="color: orange">Empowering</span> students from small
+              age <span style="color: #05d4df">towards vision</span>
+            </h1>
+            <p class="banner-description">
+              With the courage, Confidence, Creativity and Compassion to make
+              their Unique Contribution in a Diverse and Dynamic World.
+            </p>
+            <button class="primary-btn banner-btn">Enroll Now</button>
+          </div>
+          <div class="banner-image">
+            <img src="assets/hero-kids.png" alt="a visionary teen" />
+          </div>
+        </section>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
