@@ -19,6 +19,7 @@
   width: 100%;
 }
 #header-container .header,
+#header-container .banner,
 #main-container .main {
   max-width: 81vw;
   padding: 1rem 0;
@@ -32,6 +33,17 @@
   font-weight: 600;
   font-size: 1.25rem;
   border-style: none;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+.paragraph {
+  color: rgba(102, 102, 102, 1);
+  font-size: 0.96rem;
+  font-weight: 500;
+  line-height: 1.8;
 }
 /*.........navbar related styles................. */
 #menu-icon {
@@ -81,7 +93,7 @@
 }
 
 /*............. banner section styles............ */
-.banner {
+.banner-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,4 +118,127 @@
 .banner-btn {
   background-color: black;
   width: 12.7rem;
+}
+
+/* .....curriculum related styles.....*/
+.curriculum-heading {
+  text-align: center;
+  margin: 4rem 0;
+}
+.cc-card-image {
+  width: 127px;
+  height: 127px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+.cc-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.curriculum-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1.7rem;
+  flex: 1;
+}
+
+.kinder {
+  background-image: linear-gradient(
+    rgba(222, 245, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+}
+.elementary {
+  background-image: linear-gradient(
+    rgba(255, 244, 220, 1),
+    rgba(255, 255, 255, 1)
+  );
+}
+.middle {
+  background-image: linear-gradient(
+    rgba(242, 232, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+}
+.curriculum-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 3rem 0;
+  text-align: center;
+  border-radius: 1.18rem;
+  border-style: none;
+  box-shadow: inset 0rem 0rem 1.77rem 0.06rem rgba(0, 0, 0, 0.05);
+}
+.cc-card-link > a {
+  text-decoration: none;
+  font-size: 0.94rem;
+  font-weight: bold;
+}
+.cc-card-link {
+  margin-top: 2rem;
+  align-self: center;
+}
+.color-1 > a {
+  color: #64c8ff;
+}
+.color-2 > a {
+  color: rgba(240, 170, 0, 1);
+}
+.color-3 > a {
+  color: rgba(135, 0, 255, 1);
+}
+
+.cc-card-description {
+  margin: 0 2.5rem;
+  flex-grow: 1;
+}
+.cc-card-title {
+  color: rgba(32, 32, 32, 1);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.arrow-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  text-align: center;
+  margin: 4rem 0;
+}
+.left-arrow,
+.right-arrow {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: orange;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  border-style: none;
+}
+
+/* ........ our story related styles.......... */
+.our-story {
+  /* background-image: linear-gradient(
+      rgba(100, 200, 255, 0.5),
+      rgba(100, 200, 255, 0.5)
+    ),
+    url("../assets/kinder.jpg"); */
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1),
+      rgba(254, 163, 1, 1)
+    ),
+    url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
