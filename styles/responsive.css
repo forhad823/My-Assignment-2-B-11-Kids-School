@@ -16,6 +16,7 @@
   #menu-icon {
     display: block;
   }
+  /* ......our story...... */
 
   .story-card-container {
     align-items: stretch;
@@ -36,7 +37,7 @@
   }
   .story-title {
     font-weight: bold;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     line-height: 1rem;
     margin: 1rem 0;
     margin-left: 1.5rem;
@@ -101,6 +102,15 @@
   .story-card-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+  /* ......footer related mobile design.... */
+  .footer {
+    flex-direction: column;
+  }
+  .about-footer,
+  .contact-footer {
+    box-sizing: border-box;
+    padding: 0;
   }
 }
 
